@@ -19,7 +19,7 @@ Stéphan Tulkens
 
 ##Output:
 
-![Output](test_output.jpg)
+![Output](test-output.jpg)
 
 Settings: 
 	criterium: black 
