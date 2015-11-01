@@ -22,10 +22,10 @@ Stéphan Tulkens
 ![Output](test-output.jpg)
 
 Settings: 
-	criterium: black 
-	inverse: True.
+  *criterium: black 
+  *inverse: True.
 
 ## Image credit
 
-ESA/Hubble - A bizarre Cosmic Rarity
+ESA/Hubble - A bizarre Cosmic Rarity  
 found at [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Peculiar_galaxies#/media/File:A_bizarre_cosmic_rarity_NGC_660.jpg)
