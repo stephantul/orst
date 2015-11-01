@@ -102,7 +102,7 @@ if __name__ == u"__main__":
 
     logging.basicConfig(level=logging.INFO)
 
-    path = u"stephan.jpg"
+    path = u"test.jpg"
 
     img = cv2.imread(path, flags=-1)
 
