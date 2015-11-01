@@ -22,8 +22,8 @@ Stéphan Tulkens
 ![Output](test-output.jpg)
 
 Settings: 
-  *criterium: black 
-  *inverse: True.
+-criterium: black 
+-inverse: True.
 
 ## Image credit
 
