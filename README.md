@@ -22,8 +22,9 @@ Stéphan Tulkens
 ![Output](test-output.jpg)
 
 Settings: 
--criterium: black 
--inverse: True.
+- criterium: Summation 
+- Threshold: 200
+- inverse: True.
 
 ## Image credit
 
