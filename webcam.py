@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from orst import sort
+from orst import sort, multisort
 from orst import brightness
 
 
@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     simple_comp = lambda x: x > 100
 
-    num_frames = 2
+    num_frames = 150
     cam = cv2.VideoCapture(0)
 
     ret, frame = cam.read()
@@ -24,7 +24,11 @@ if __name__ == "__main__":
 
         ret, frame = cam.read()
         if ret:
-            f_t = sort(frame, simple_comp)
+            simple_comp = lambda z: z > (150 - x)
+            simple_comp_2 = lambda z: z > (200 - x)
+            params = [{'comparer': simple_comp, 'heuristic': brightness, 'num_rotations': 1},
+                      {'comparer': simple_comp_2, 'heuristic': brightness, 'num_rotations': 2}]
+            f_t = multisort(frame, params)
             out.write(f_t)
 
     cam.release()

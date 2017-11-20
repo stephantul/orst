@@ -1,12 +1,12 @@
 import cv2
 import numpy as np
 from orst import sort
-from orst import brightness
+from orst import brightness, summation
 
 
 if __name__ == "__main__":
 
-    simple_comp = lambda x: x < 200
+    simple_comp = lambda x: x > 200
 
     num_frames = 100
     cam = cv2.VideoCapture("koek_en_ei.mp4")
@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
         ret, frame = cam.read()
         if ret:
-            f_t = sort(frame, simple_comp)
+            f_t = sort(frame, simple_comp, summation)
             out.write(f_t)
 
     cam.release()

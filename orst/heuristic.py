@@ -9,6 +9,6 @@ def brightness(colors):
     return np.sum(colors * const_bright, -1)
 
 
-def grayness(r, g, b):
-    """Return whether something is gray."""
-    return np.logical_and(np.abs(r - g < 5), np.abs(r - b < 5))
+def summation(colors):
+    """Calculate sum of color triples."""
+    return np.sum(colors, -1)

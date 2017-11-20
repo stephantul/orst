@@ -1,9 +1,9 @@
 # orst
-A pixel sorting program, written in python 2.x. Support for sorting by column and row, as well as three different sorting criteria.
+A pixel sorting program, written in python 3.x.
 
 Based on: https://github.com/kimasendorf/ASDFPixelSort
 
-# License 
+# License
 
 MIT
 
@@ -13,18 +13,17 @@ Stéphan Tulkens
 
 # Example
 
-##Input:
+## Input:
 
 ![Input](test.jpg)
 
-##Output:
+## Output:
 
 ![Output](test-output.jpg)
 
-Settings: 
-- criterium: Summation 
-- Threshold: 200
-- inverse: True.
+Settings:
+- criterium: Summation
+- Comparer: `lambda x: x < .9`
 
 ## Image credit
 
