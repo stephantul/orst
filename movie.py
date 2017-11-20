@@ -9,7 +9,7 @@ if __name__ == "__main__":
     simple_comp = lambda x: x > 200
 
     num_frames = 100
-    cam = cv2.VideoCapture("koek_en_ei.mp4")
+    cam = cv2.VideoCapture("path.mp4")
 
     ret, frame = cam.read()
 
