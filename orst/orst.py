@@ -8,9 +8,9 @@ from .heuristic import brightness
 def multisort(image, params):
     """Sort an image by performing multiple transforms sequentially."""
     for x in params:
-        comparer = x['comparer']
-        heuristic = x['heuristic']
-        num_rotations = x['num_rotations']
+        comparer = x["comparer"]
+        heuristic = x["heuristic"]
+        num_rotations = x["num_rotations"]
         image = sort(image, comparer, heuristic, num_rotations)
 
     return image

@@ -1,20 +1,22 @@
 import cv2
-import numpy as np
 from orst import sort
-from orst import brightness, summation
+from orst import summation
 
 
 if __name__ == "__main__":
 
-    simple_comp = lambda x: x > 200
+    def simple_comp(x):
+        return x > 200
 
     num_frames = 100
     cam = cv2.VideoCapture("path.mp4")
 
     ret, frame = cam.read()
 
-    fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    out = cv2.VideoWriter('output.avi', cv2.VideoWriter_fourcc(*"MJPG"), 20, frame.shape[:-1][::-1])
+    fourcc = cv2.VideoWriter_fourcc(*"XVID")
+    out = cv2.VideoWriter(
+        "output.avi", cv2.VideoWriter_fourcc(*"MJPG"), 20, frame.shape[:-1][::-1]
+    )
 
     resultant_frames = []
 

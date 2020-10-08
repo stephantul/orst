@@ -1,7 +1,7 @@
 """Heuristics for the sorting algorithm."""
 import numpy as np
 
-const_bright = np.array([.2126, .7152, .0722])[None, None, :]
+const_bright = np.array([0.2126, 0.7152, 0.0722])[None, None, :]
 
 
 def brightness(colors):
